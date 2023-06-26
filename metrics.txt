@@ -1,0 +1,41 @@
+========================Siamese Network=================
+              precision    recall  f1-score   support
+
+       False       1.00      0.99      0.99     44922
+        True       0.99      1.00      0.99     45138
+
+    accuracy                           0.99     90060
+   macro avg       0.99      0.99      0.99     90060
+weighted avg       0.99      0.99      0.99     90060
+
+AUC-ROC: 0.9998115357160184
+========================Dense Neural Network=================
+              precision    recall  f1-score   support
+
+       False       0.98      0.98      0.98     45063
+        True       0.98      0.98      0.98     44997
+
+    accuracy                           0.98     90060
+   macro avg       0.98      0.98      0.98     90060
+weighted avg       0.98      0.98      0.98     90060
+
+AUC-ROC: 0.9983269165477079
+========================Logistic Regression=================
+
+       False       0.62      0.75      0.68     45063
+        True       0.68      0.55      0.61     44997
+
+    accuracy                           0.65     90060
+   macro avg       0.65      0.65      0.64     90060
+weighted avg       0.65      0.65      0.64     90060
+
+AUC-ROC: 0.7171520757714367
+=======================Shallow Network===================
+       False       0.75      0.74      0.75     45063
+        True       0.75      0.75      0.75     44997
+
+    accuracy                           0.75     90060
+   macro avg       0.75      0.75      0.75     90060
+weighted avg       0.75      0.75      0.75     90060
+
+AUC-ROC: 0.842161582664368

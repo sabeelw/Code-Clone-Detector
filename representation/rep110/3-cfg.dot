@@ -1,0 +1,5 @@
+digraph "&lt;operator&gt;.logicalAnd" {  
+"52" [label = <(METHOD,&lt;operator&gt;.logicalAnd)> ]
+"56" [label = <(METHOD_RETURN,ANY)> ]
+  "52" -> "56" 
+}

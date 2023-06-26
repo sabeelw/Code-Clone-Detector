@@ -1,0 +1,23 @@
+digraph "main" {  
+"26" [label = <(printf,printf(&quot;What is the meaning of life?\n&quot;))<SUB>6</SUB>> ]
+"28" [label = <(exit,exit(0))<SUB>7</SUB>> ]
+"12" [label = <(&lt;operator&gt;.logicalAnd,argc &gt; 1 &amp;&amp; strcmp(argv[1], &quot;42&quot;) == 0)<SUB>3</SUB>> ]
+"13" [label = <(&lt;operator&gt;.greaterThan,argc &gt; 1)<SUB>3</SUB>> ]
+"16" [label = <(&lt;operator&gt;.equals,strcmp(argv[1], &quot;42&quot;) == 0)<SUB>3</SUB>> ]
+"24" [label = <(exit,exit(42))<SUB>4</SUB>> ]
+"17" [label = <(strcmp,strcmp(argv[1], &quot;42&quot;))<SUB>3</SUB>> ]
+"18" [label = <(&lt;operator&gt;.indirectIndexAccess,argv[1])<SUB>3</SUB>> ]
+"7" [label = <(METHOD,main)<SUB>2</SUB>> ]
+"30" [label = <(METHOD_RETURN,int)<SUB>2</SUB>> ]
+  "26" -> "28" 
+  "28" -> "30" 
+  "12" -> "24" 
+  "12" -> "26" 
+  "13" -> "12" 
+  "13" -> "18" 
+  "16" -> "12" 
+  "24" -> "26" 
+  "17" -> "16" 
+  "18" -> "17" 
+  "7" -> "13" 
+}

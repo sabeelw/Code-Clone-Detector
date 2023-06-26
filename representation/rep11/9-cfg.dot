@@ -1,0 +1,5 @@
+digraph "printf" {  
+"87" [label = <(METHOD,printf)> ]
+"90" [label = <(METHOD_RETURN,ANY)> ]
+  "87" -> "90" 
+}

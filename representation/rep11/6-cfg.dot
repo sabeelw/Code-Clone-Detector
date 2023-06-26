@@ -1,0 +1,5 @@
+digraph "strcmp" {  
+"73" [label = <(METHOD,strcmp)> ]
+"77" [label = <(METHOD_RETURN,ANY)> ]
+  "73" -> "77" 
+}

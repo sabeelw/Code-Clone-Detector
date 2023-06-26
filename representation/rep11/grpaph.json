@@ -1,0 +1,115 @@
+{
+  "name": "main",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "32",
+      "label": "(printf,printf(&quot;What is the meaning of life?\\n&quot;))<SUB>8<\/SUB>"
+    },
+    {
+      "_gvid": 1,
+      "name": "34",
+      "label": "(exit,exit(0))<SUB>9<\/SUB>"
+    },
+    {
+      "_gvid": 2,
+      "name": "18",
+      "label": "(&lt;operator&gt;.logicalAnd,argc &gt; 1 &amp;&amp; strcmp(argv[1], &quot;42&quot;) == 0)<SUB>5<\/SUB>"
+    },
+    {
+      "_gvid": 3,
+      "name": "19",
+      "label": "(&lt;operator&gt;.greaterThan,argc &gt; 1)<SUB>5<\/SUB>"
+    },
+    {
+      "_gvid": 4,
+      "name": "22",
+      "label": "(&lt;operator&gt;.equals,strcmp(argv[1], &quot;42&quot;) == 0)<SUB>5<\/SUB>"
+    },
+    {
+      "_gvid": 5,
+      "name": "30",
+      "label": "(exit,exit(42))<SUB>6<\/SUB>"
+    },
+    {
+      "_gvid": 6,
+      "name": "23",
+      "label": "(strcmp,strcmp(argv[1], &quot;42&quot;))<SUB>5<\/SUB>"
+    },
+    {
+      "_gvid": 7,
+      "name": "24",
+      "label": "(&lt;operator&gt;.indirectIndexAccess,argv[1])<SUB>5<\/SUB>"
+    },
+    {
+      "_gvid": 8,
+      "name": "13",
+      "label": "(METHOD,main)<SUB>4<\/SUB>"
+    },
+    {
+      "_gvid": 9,
+      "name": "36",
+      "label": "(METHOD_RETURN,int)<SUB>4<\/SUB>"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 1
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 9
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 0
+    },
+    {
+      "_gvid": 3,
+      "tail": 2,
+      "head": 5
+    },
+    {
+      "_gvid": 4,
+      "tail": 3,
+      "head": 2
+    },
+    {
+      "_gvid": 5,
+      "tail": 3,
+      "head": 7
+    },
+    {
+      "_gvid": 6,
+      "tail": 4,
+      "head": 2
+    },
+    {
+      "_gvid": 7,
+      "tail": 5,
+      "head": 0
+    },
+    {
+      "_gvid": 8,
+      "tail": 6,
+      "head": 4
+    },
+    {
+      "_gvid": 9,
+      "tail": 7,
+      "head": 6
+    },
+    {
+      "_gvid": 10,
+      "tail": 8,
+      "head": 3
+    }
+  ]
+}
